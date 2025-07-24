@@ -37,13 +37,3 @@ def load_gcs_parquet_file(bucket_name: str, folder_name: str, file_name: str) ->
     df = table.to_pandas()
     
     return df
-
-
-
-bucket_name = "bucket-project-2"
-folder_processed = "processed"
-folder_jquants = "jquants"
-df_daily_quantes = load_ndjson_from_gcs(bucket_name, folder_jquants, "jquants_daily_quotes.json")
-print(",\n".join([f'"{col}"' for col in df_daily_quantes.columns.tolist()]))
-
-
