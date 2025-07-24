@@ -1,0 +1,9 @@
+pandas
+gspread
+oauth2client
+aiohttp
+google-cloud-storage
+google-cloud-secret-manager
+requests
+tomli
+flask
